@@ -4,10 +4,9 @@ import "./BlogCard.css";
 function BlogCard({ imgUrl, title, description, details }) { 
 
     const currentDate = new Date().toLocaleDateString('en-US', {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
+    day: 'numeric',  
+    month: 'long',     
+    year: 'numeric'
     });
 
   return (
@@ -15,7 +14,7 @@ function BlogCard({ imgUrl, title, description, details }) {
       <img src={imgUrl} className="blog-card-image"/>
       <h3 className="blog-card-title">{title}</h3>
       <p className="blog-card-desc">{description}</p>
-      <h5 className="blog-card-details">{details}</h5>
+      <h5 className="blog-card-details">-{details}</h5>
       <h5 className="blog-card-details">{currentDate}</h5>
     </div>
   );
