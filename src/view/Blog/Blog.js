@@ -18,7 +18,9 @@ function Blog() {
              {Blogs.map((BlogCards)=>{
               return <BlogCard
               imgUrl={BlogCards.imgUrl}
-
+              title={BlogCards.title}
+              description={BlogCards.description}
+              details={BlogCards.details}
               />
               })}
              </div>
