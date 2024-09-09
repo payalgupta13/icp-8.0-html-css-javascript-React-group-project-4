@@ -1,24 +1,49 @@
-import React from "react";
-import { BlogHeading, TagLine, Blogs } from "../../config/BlogData";
+import React, { useState } from 'react';
+import { BlogHeading, TagLine, TagLine_2, Blogs } from "../../config/BlogData";
 import "./Blog.css";
 import BlogCard from "../../components/BlogCards/BlogCard";
 
 function Blog() {
+
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
   return (
     <div>
       <div className="blog-page">
         <div className="blog-container">
           <h1>{BlogHeading}</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-            eum esse eius beatae nam placeat.<br></br>Impedit incidunt molestiae
-            cupiditate labore veritatis beatae nulla dicta, perferendis eaque
-            saepe debitis, recusandae exercitationem!
-          </p>
+          <p>{TagLine}</p>
+          <p>{TagLine_2}</p>
         </div>
+
+
         <div className="btn-container">
-          <button>Add Your Blogs</button>
+        <button onClick={() => setIsPopupOpen(true)}>Add Blog</button>
+
+{isPopupOpen && (
+  <div className="popup-overlay">
+    <div className="popup-content">
+      <h2>Add a New Blog</h2>
+      <form>
+        <label>
+          Title:
+          <input type="text" name="title" />
+        </label>
+        <br />
+        <label>
+          Content:
+          <textarea name="content" />
+        </label>
+        <br />
+        <button type="submit">Submit</button>
+        <button type="button" onClick={() => setIsPopupOpen(false)}>Close</button>
+      </form>
+    </div>
+  </div>
+)}
         </div>
+
+
         <div className="component-cards">
           {Blogs.map((BlogCards) => {
             return (
