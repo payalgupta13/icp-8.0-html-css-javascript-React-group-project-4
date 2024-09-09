@@ -1,13 +1,33 @@
 footer{
     width: 100vw;
-    height: 5vh;
+    
+    height: 45px;
     position: fixed;
     bottom: 0px;
     background-color: rgba(128, 128, 128, 0.563);
     display: flex;
     justify-content: space-around;
+    background-color: #557C56;
 }
 
 .content{
     margin: 5px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+
+}
+.copyright-text{
+    color: white;
+    font-size: 15px;
+
+}
+.footer-socials{ 
+display: flex;
+gap: 30px;
+   }
+
+.footer-socials-img{
+    height: 30px;
 }
