@@ -1,0 +1,10 @@
+.blog-page{
+    width: 100%;
+}
+.blog-container{
+   text-align: center;
+}
+.btn-container button{
+     display: block;
+     margin: 0 auto;
+}
