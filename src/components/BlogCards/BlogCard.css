@@ -1,0 +1,27 @@
+.blogs-cards-compo {
+   
+}
+.blog-card-container {
+    width: 350px; 
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+.blog-card-image {
+    width: 350px;
+    border-radius: 10px;
+}
+.blog-card-title {
+    margin: 0;
+}
+.blog-card-desc {
+    text-align: justify;
+    margin: 0; 
+    padding: 10px 0px;
+    padding-right: 10px;
+
+}
+.blog-card-details {
+    margin: 0;
+}
+

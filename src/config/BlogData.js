@@ -1,15 +1,32 @@
-import img from "./download.jpeg";
+import img1 from "../images/blogImages/pexels-pixabay-235925.jpg";
 
 const BlogHeading = "Latest Blogs"
-const TagLine = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, eum esse eius beatae nam placeat.Impedit incidunt molestiae cupiditate labore veritatis beatae nulla dicta, perferendis eaque saepe debitis, recusandae exercitationem!"
+const TagLine = ""
 
 const Blogs = [
     {
-        imgUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG3MKJY-w7lh-R4qGVZYBxbWMLnb2379LktQ&s",
+        imgUrl:img1,
         title:"First Blog",
         description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit quis delectus modi possimus.",
         details:"Piyush Aglawe"
-
+    },
+    {
+        imgUrl:img1,
+        title:"First Blog",
+        description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit quis delectus modi possimus.",
+        details:"Piyush Aglawe"
+    },
+    {
+        imgUrl:img1,
+        title:"First Blog",
+        description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit quis delectus modi possimus.",
+        details:"Piyush Aglawe"
+    },
+    {
+        imgUrl:img1,
+        title:"First Blog",
+        description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit quis delectus modi possimus.",
+        details:"Piyush Aglawe"
     }
 ]
 

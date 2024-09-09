@@ -1,15 +1,24 @@
-import React from 'react'
+import React from "react";
 import "./BlogCard.css";
 
-function BlogCard({imgUrl,title,description, details}) {
+function BlogCard({ imgUrl, title, description, details }) { 
+
+    const currentDate = new Date().toLocaleDateString('en-US', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+
   return (
-    <div>
-        <img src={imgUrl} />
-        <h1>{title}</h1>
-        <p>{description}</p>
-        <h4>{details}</h4>
+    <div className="blog-card-container">
+      <img src={imgUrl} className="blog-card-image"/>
+      <h3 className="blog-card-title">{title}</h3>
+      <p className="blog-card-desc">{description}</p>
+      <h5 className="blog-card-details">{details}</h5>
+      <h5 className="blog-card-details">{currentDate}</h5>
     </div>
-  )
+  );
 }
 
-export default BlogCard
+export default BlogCard;
