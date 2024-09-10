@@ -1,3 +1,8 @@
+.headder{
+  position: relative;
+  background-color: none;
+  z-index: 10;
+}
 .App {
     background-image: url("https://cdn.pixabay.com/photo/2024/04/20/11/47/ai-generated-8708404_1280.jpg");
     background-size: cover;
@@ -36,6 +41,7 @@
     height: 350px;
     width: 100vw;
     max-width: 100vw;
+    
 }
 
 .App-section-1-div1 {
@@ -49,9 +55,10 @@
 }
 
 .App-section-1-div1-span {
-    font-size: 32px;
-    width: 150px;
+    font-size: 42px;
+    width: 250px;
     text-align: justify;
+    font-family:cursive;
 }
 
 .App-section-1-div2 {
@@ -79,12 +86,14 @@
 .App-section-1-images-container{
     display: flex;
     gap: 3vw;
+    
 }
 .App-section-1-images-container span{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .App-section-1-images{
@@ -102,8 +111,8 @@
 
 /* card two css */
 
-.why-choose-us-container {
-    background-color: #f5ecd7; 
+.why-choose-us-content {
+    background-color: #3f594440; 
     padding: 35px;
     text-align: center;
     max-width: 90%;
@@ -117,25 +126,23 @@
     align-items: center;
     gap: 30px;
   }
+ 
 
-  .heading {
+  .why-choose-us-heading{
     font-size: 50px;
-    color: #502e17;
   }
   
   .why-choose-us-text {
     max-width: 600px;
   }
   
-  h2 {
+  .why-choose-us-text h2 {
     font-size: 40px;
-    color: #5f3711;
     margin-bottom: 10px;
   }
   
-  p {
+  .why-choose-us-text p {
     font-size: 18px;
-    color: #5f3711;
   }
   
   .leaf-icon {
@@ -149,4 +156,13 @@
   .leaf-icon.right {
     margin-left: 200px;
   }
-  
+  .knowmore-button{
+    background-color: #3f5944f3; 
+
+    display: block;
+    margin: 20px auto;
+    padding: 7px 19px;
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+  }

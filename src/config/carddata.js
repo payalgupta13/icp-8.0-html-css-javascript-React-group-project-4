@@ -14,7 +14,7 @@ const PRODUCTS = [
     },
     {
         name: "Capsicum",
-        photo: "https://www.nicepng.com/png/detail/52-525615_green-bell-pepper-png-green-capsicum-png.png",
+        photo: "https://www.pngmart.com/files/15/Salad-Bell-Pepper-Red-Transparent-PNG.png",
         quantity:"One Unit",
         price: '10'
     },
@@ -37,12 +37,6 @@ const PRODUCTS = [
         price: '5'
     },
     {
-        name: "Celeriac",
-        photo: "https://w7.pngwing.com/pngs/252/146/png-transparent-celeriac-leaf-vegetable-food-celery-herbes-leaf-vegetable-food-plant-stem-thumbnail.png",
-        quantity: "One Bunch",
-        price: '5'
-    },
-    {
         name: "Carrots",
         photo: "https://www.freepngimg.com/thumb/categories/2971.png",
         quantity: "One Kg",
@@ -61,7 +55,20 @@ const PRODUCTS = [
         photo: "https://www.freepngimg.com/thumb/potato/7-potato-png-images-pictures-download-thumb.png",
         quantity: "One container",
         price: '80'
+    },
+    {
+        name: "Broccoli",
+        photo: "https://www.freepngimg.com/thumb/broccoli/4-broccoli-png-image.png",
+        quantity: "One Head",
+        price: "35"
+    },
+    {
+        name: "Spinach",
+        photo: "https://freepngimg.com/thumb/spinach/158885-chinese-spinach-png-file-hd.png",
+        quantity: "One Bunch",
+        price: "18"
     }
+    
 ]
 
 export { PRODUCTS }

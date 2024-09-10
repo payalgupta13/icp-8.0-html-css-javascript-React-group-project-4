@@ -6,6 +6,7 @@ import earth from '../../images/nav/earth.png'
 import vegetable from '../../images/nav/vegetable.png'
 import wheat from '../../images/nav/wheat.png'
 import farmer from '../../images/nav/farmer.png'
+import { Link } from "react-router-dom"
 function App() {
   return (
     <>
@@ -26,23 +27,23 @@ function App() {
           <div className="App-section-1-images-container">
             <span>
               <img className="App-section-1-images" src={earth} />
-              <p>farm <br />fresh</p>
+              <p>Organic  <br />Farming</p>
             </span>
             <span>
               <img className="App-section-1-images"  src={cow}  />
-              <p>farm<br /> fresh</p>
+              <p>Diffrent<br /> Livestock</p>
             </span>
             <span>
               <img className="App-section-1-images" src={vegetable}  />
-              <p>farm <br />fresh</p>
+              <p>Fresh <br />Vegetables</p>
             </span>
             <span>
               <img className="App-section-1-images"  src={farmer} />
-              <p>farm <br />fresh</p>
+              <p>Farm <br />Fresh</p>
             </span>
             <span>
               <img className="App-section-1-images"  src={wheat}  />
-              <p>farm <br />fresh</p>
+              <p>Agriculture <br />Products</p>
             </span>
 
           </div>
@@ -59,7 +60,7 @@ function App() {
           className="leaf-icon left" />
 
         <div className="why-choose-us-text">
-          <h1 className='heading'>Why Choose Us ?</h1>
+          <h1 className='why-choose-us-heading'>Why Choose Us ?</h1>
           <p>By building a culture of sustainability and wholesome living, we strive for a healthier you and a healthier planet.</p>
         </div>
 
@@ -68,6 +69,7 @@ function App() {
           className="leaf-icon right" />
 
       </div>
+      <Link to="/about"><button className="knowmore-button"  > know more</button></Link>
       <Footer />
     </>
   )

@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    background-color: #12372A;
+    background-color: #375241;
     padding: 20px 20px 0px 20px;
 
 }
@@ -99,6 +99,6 @@ ul {
     align-items: center;
     gap: 20px;
     height: 40px;
-    background-color: #245c48;
+    background-color: #264134;
 
 }
