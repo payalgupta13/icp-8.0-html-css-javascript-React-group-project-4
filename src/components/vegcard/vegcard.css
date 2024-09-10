@@ -1,0 +1,27 @@
+.veg-img{
+height: 15vh;
+display: block;
+margin: 0px auto;
+}
+.veg-continer{
+    height: 250px;
+    width: 200px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    margin-top: 10px;
+}
+.btn-continer{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 35px;
+}
+.card-btn{
+    padding: 1vh 4vw;
+    background-color: rgb(199, 193, 117);
+    border: none;
+    cursor: pointer;
+}
