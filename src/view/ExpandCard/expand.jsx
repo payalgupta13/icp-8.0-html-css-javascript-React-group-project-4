@@ -4,7 +4,11 @@ function expand() {
   return (
     <>
     <Navbar/>
-    <p>expand</p>
+          <div>
+            <div>
+              <img  src={"https://www.freepngimg.com/thumb/categories/2970.png"}/>
+            </div>
+          </div>
     <Footer/>
   </>
   )
