@@ -3,12 +3,12 @@ import { NavLink } from 'react-router-dom';
 
 function Footer() {
   return (
-    <header>
-      <div className="container">
+    <header className='header'>
+      <div className="nav-container">
         <NavLink
           to="/"
           style={({ isActive }) =>
-            isActive ? { color: 'red',} : { color: 'black' }
+            isActive ? { color: 'white',} : { color: 'grey' }
           }className="nav"
         >
           Home
@@ -17,7 +17,7 @@ function Footer() {
         <NavLink
           to="/Services"
           style={({ isActive }) =>
-            isActive ? { color: 'red',  } : { color: 'black' }
+            isActive ? { color: 'white',  } : { color: 'grey' }
           }className="nav"
         >
           Services
@@ -26,7 +26,7 @@ function Footer() {
           to="/about"
           style={({ isActive }) =>
  
-            isActive ? { color: 'red',     } : { color: 'black' }
+            isActive ? { color: 'white',     } : { color: 'grey' }
           
           }className="nav"
         >
@@ -35,7 +35,7 @@ function Footer() {
         <NavLink
           to="/contact"
           style={({ isActive }) =>
-            isActive ? { color: 'red',  } : { color: 'black' }
+            isActive ? { color: 'white',  } : { color: 'grey' }
           }className="nav"
         >
           Contact
@@ -43,7 +43,7 @@ function Footer() {
         <NavLink
           to="/blog"
           style={({ isActive }) =>
-            isActive ? { color: 'red',  } : { color: 'black' }
+            isActive ? { color: 'white',  } : { color: 'grey' }
           }className="nav"
         >
           Blog
@@ -51,7 +51,7 @@ function Footer() {
         <NavLink
           to="/cart"
           style={({ isActive }) =>
-            isActive ? { color: 'red',  } : { color: 'black' }
+            isActive ? { color: 'white',  } : { color: 'grey' }
           }className="nav"
         >
           Cart

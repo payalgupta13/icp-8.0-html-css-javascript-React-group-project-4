@@ -1,25 +1,25 @@
-header {
+.header {
     width: 100vw;
-    height: 7vh;
-    background-color: rgba(128, 128, 128, 0.563);
+    height: 9vh;
+    background-color:rgba(38,65,52,255);
     display: flex;
     justify-content: end;
     align-items: center;
     
 
+
 }
 
-.container {
+.nav-container {
     margin-right: 60px;
     display: flex;
     gap: 20px;
 
 }
 
-span {
-    font-size: large;
-    padding-right: 20px;
-}
+
 .nav{text-decoration: none;
+    font-size: large;
+    
 
 }
