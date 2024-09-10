@@ -1,5 +1,7 @@
 import Footer from "../../components/footer/footer"
 import Navbar from "../../components/navbar/nav"
+import "./about.css"
+
 function About() {
   return (
     <>
