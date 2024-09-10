@@ -1,13 +1,15 @@
 import Footer from "../../components/footer/footer"
-import Navbar from "../../components/navbar/nav"
+
+import './expand.css'
 function expand() {
   return (
     <>
     <Navbar/>
-          <div>
-            <div>
+          <div className="expand-container">
+             <div>
               <img  src={"https://www.freepngimg.com/thumb/categories/2970.png"}/>
-            </div>
+             </div>
+           
           </div>
     <Footer/>
   </>
