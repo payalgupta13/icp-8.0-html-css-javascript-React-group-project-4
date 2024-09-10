@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Blogs } from '../../../config/BlogData';
+import "./ReadBlogs.css"
 
 function ReadBlogs() {
     const { blogId } = useParams();
     const [blogDetails, setBlogDetails] = useState({
         imgUrl: "",
         title: "",
-        description: "",
-        content: "",
-        details: ""
+        content: []
     });
 
     useEffect(() => {
@@ -20,23 +19,22 @@ function ReadBlogs() {
             setBlogDetails({
                 imgUrl: "",
                 title: "Blog not found",
-                description: "",
-                content: "",
-                details: ""
+                content: []
             });
         }
     }, [blogId]);
 
     return (
-        <div>
+        <div className='read-card-container'>
+            <div className='read-card-content'>
             <p>ID: {blogId}</p>
-            <h1>Blogs</h1>
-            <img src={blogDetails.imgUrl} alt={blogDetails.title} />
             <h2>{blogDetails.title}</h2>
-            <h4>{blogDetails.description}</h4>
-            <h5>{blogDetails.content}</h5>
-            <h6>{blogDetails.details}</h6>
+            <img src={blogDetails.imgUrl} alt={blogDetails.title} className='read-blog-image' />
+            {blogDetails.content.map((content, index) => (
+                <p key={index} className='read-blog-text'>{content}</p>
+            ))}
         </div>
+    </div>
     );
 }
 
