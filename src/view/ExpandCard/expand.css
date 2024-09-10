@@ -1,3 +1,7 @@
 .expand-container{
     display: flex;
 }
+.expand-details{
+    display: flex;
+    flex-direction: column;
+}
