@@ -11,18 +11,6 @@ const TagLine =
 const TagLine_2 =
   "Impedit incidunt molestiae cupiditate labore veritatis beatae nulla dicta,      perferendis eaque saepe debitis, recusandae exercitationem!";
 
-const BlogCategory = [
-  {
-    title: "Food",
-  },
-  {
-    title: "Vegetable",
-  },
-  {
-    title: "Milk",
-  }
-];
-
 const Blogs = [
   {
     id: 1,
@@ -200,4 +188,4 @@ const Blogs = [
   },
 ];
 
-export { BlogHeading, TagLine, TagLine_2, Blogs, BlogCategory };
+export { BlogHeading, TagLine, TagLine_2, Blogs};
