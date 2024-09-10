@@ -41,6 +41,14 @@ function Footer() {
           Contact
         </NavLink>
         <NavLink
+          to="/blog"
+          style={({ isActive }) =>
+            isActive ? { color: 'red',  } : { color: 'black' }
+          }className="nav"
+        >
+          Blog
+        </NavLink>
+        <NavLink
           to="/cart"
           style={({ isActive }) =>
             isActive ? { color: 'red',  } : { color: 'black' }
