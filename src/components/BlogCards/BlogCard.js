@@ -2,12 +2,9 @@ import React from "react";
 import "./BlogCard.css";
 import { Link } from "react-router-dom";
 
-function BlogCard({id, imgUrl, title, description, details }) { 
+function BlogCard({id, imgUrl, title, description, details}) { 
 
   return (
-   
-    
-
     <div className="blog-card-containers">
       <img src={imgUrl} className="blog-card-image" alt={title} />
       <div className="blog-card-content">
@@ -20,6 +17,7 @@ function BlogCard({id, imgUrl, title, description, details }) {
        <Link to={`/blog/${id}`}><button className="read-more-btn">Read More</button></Link>
       </div>
     </div>
+
    
    
     
