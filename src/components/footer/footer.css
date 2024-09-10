@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 .footer {
     height: auto;
     padding: 0px 0;
     color: beige;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+     font-family: "SUSE", sans-serif;
 }
 
 .footer-container {
@@ -19,12 +19,14 @@
 
 .footer-logo {
     height: 120px;
+    padding-bottom: -40px;
 }
 
 .footer-para {
     text-align: justify;
     width: 300px;
     padding-left: 10px;
+    
 }
 
 .footer-Agro,

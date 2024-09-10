@@ -1,0 +1,31 @@
+.App {
+    background-image: url("https://cdn.pixabay.com/photo/2024/04/20/11/47/ai-generated-8708404_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+ border-radius: 50px 0px 0px 0px;
+  }
+  
+  .App::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+  }
+  /* @import url('https://fonts.googleapis.com/css2?family=Ewert&display=swap');
+  .App-name{
+    font-family: "Ewert", serif;
+  font-weight: 400;
+  font-style: normal;
+
+    color: aquamarine;
+    font-size:100px;
+  }
+  
+  */
+  
