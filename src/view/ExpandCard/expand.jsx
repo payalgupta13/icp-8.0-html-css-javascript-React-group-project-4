@@ -11,6 +11,8 @@ function expand() {
              </div>
              <div>
                <h2>Cabbage</h2>
+               <span> price : ₹30</span>
+
              </div>
           </div>
     <Footer/>
