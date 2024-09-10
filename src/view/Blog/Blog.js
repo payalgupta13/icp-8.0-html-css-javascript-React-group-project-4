@@ -31,11 +31,15 @@ function Blog() {
             </div>
           )}
         </div>
-
+         
+        <div className="main-component-cards">
         <div className="component-cards">
+          
           {Blogs.map((BlogCards) => {
             return (
               <BlogCard
+                key={BlogCards.id}
+                id={BlogCards.id}
                 imgUrl={BlogCards.imgUrl}
                 title={BlogCards.title}
                 description={BlogCards.description}
@@ -44,6 +48,8 @@ function Blog() {
             );
           })}
         </div>
+        </div> 
+
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ import About from './view/About-us/about';
 import Blog from './view/Blog/Blog';
 import Cart from './view/cart/cart';
 import Services from './view/services/Services';
-
+import ReadBlogs from './view/Blog/ReadBlogs/ReadBlogs';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,9 +17,11 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/about" element={<Blog />} />
+      <Route path="/about" element={<About />} />
       <Route path="/Services" element={<Services />} />
       <Route path="/Cart" element={<Cart />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/blog/:blogId" element={<ReadBlogs />} />
     </Routes>
   </BrowserRouter>
 );

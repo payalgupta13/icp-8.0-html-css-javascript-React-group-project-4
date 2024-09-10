@@ -1,22 +1,33 @@
 import React from "react";
 import "./BlogCard.css";
+import { Link } from "react-router-dom";
 
-function BlogCard({ imgUrl, title, description, details }) { 
-
-    const currentDate = new Date().toLocaleDateString('en-US', {
-    day: 'numeric',  
-    month: 'long',     
-    year: 'numeric'
-    });
+function BlogCard({id, imgUrl, title, description, details }) { 
 
   return (
-    <div className="blog-card-container">
-      <img src={imgUrl} className="blog-card-image"/>
-      <h3 className="blog-card-title">{title}</h3>
-      <p className="blog-card-desc">{description}</p>
-      <h5 className="blog-card-details">-{details}</h5>
-      <h5 className="blog-card-details">{currentDate}</h5>
+   
+    
+
+    <div className="blog-card-containers">
+      <img src={imgUrl} className="blog-card-image" alt={title} />
+      <div className="blog-card-content">
+        <h3 className="blog-card-title">{title}</h3>
+        <p className="blog-card-desc">{description}</p>
+        <h5 className="blog-card-details">{details}</h5>
+      </div>
+      <div>
+        <hr/>
+       <Link to={`/blog/${id}`}><button className="read-more-btn">Read More</button></Link>
+      </div>
     </div>
+   
+   
+    
+ 
+  
+    
+
+
   );
 }
 
