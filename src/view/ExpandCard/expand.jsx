@@ -1,5 +1,5 @@
 import Footer from "../../components/footer/footer"
-
+import Navbar from "../../components/navbar/nav"
 import './expand.css'
 function expand() {
   return (
@@ -9,7 +9,9 @@ function expand() {
              <div>
               <img  src={"https://www.freepngimg.com/thumb/categories/2970.png"}/>
              </div>
-           
+             <div>
+               <h2>Cabbage</h2>
+             </div>
           </div>
     <Footer/>
   </>
