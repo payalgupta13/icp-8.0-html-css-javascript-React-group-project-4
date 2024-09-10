@@ -15,7 +15,7 @@ function Footer() {
         </NavLink>
        
         <NavLink
-          to="/contact"
+          to="/Services"
           style={({ isActive }) =>
             isActive ? { color: 'red',  } : { color: 'black' }
           }className="nav"
@@ -33,7 +33,7 @@ function Footer() {
           About
         </NavLink>
         <NavLink
-          to="/services"
+          to="/contact"
           style={({ isActive }) =>
             isActive ? { color: 'red',  } : { color: 'black' }
           }className="nav"
