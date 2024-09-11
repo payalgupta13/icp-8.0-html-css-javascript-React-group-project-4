@@ -6,6 +6,23 @@
     flex-direction: column;
 }
 .expand-quantity-counter{
-    height: 20px;
+    margin: 5px ;
+    height: 25px;
+    width: 100px;
     border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 5px;
+}
+.img-icon{
+    padding: 1px 5px;
+    height: 3px;
+    cursor: pointer;
+}
+.expand-quantity{
+    padding: 2px 0px;
+}
+.expand-select{
+    height: 25px;
 }
