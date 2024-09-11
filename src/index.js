@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './view/App/App';
 import Contact from './view/Contact/contact';
+import Login from './view/Login/login';
+import Sign from './view/Login/Signup/sign';
 import Expand from './view/ExpandCard/expand';
 import About from './view/About-us/about';
 import Cart from './view/cart/cart';
@@ -21,6 +23,8 @@ root.render(
       <Route path="/Services" element={<Services />} />
       <Route path="/Cart" element={<Cart />} />
       <Route path="/expand" element={<Expand />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/sign" element={<Sign />} />
     </Routes>
   </BrowserRouter>
 );

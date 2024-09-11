@@ -1,5 +1,6 @@
 import Footer from "../../components/footer/footer"
 import Navbar from "../../components/navbar/nav"
+import Card3 from "../../components/homepageCard3/card3"
 import './App.css'
 import cow from '../../images/nav/cow.png'
 import earth from '../../images/nav/earth.png'
@@ -7,7 +8,13 @@ import vegetable from '../../images/nav/vegetable.png'
 import wheat from '../../images/nav/wheat.png'
 import farmer from '../../images/nav/farmer.png'
 import { Link } from "react-router-dom"
+// import Card3card from "../../components/homepageCard3/card3"
+
+import card3 from "../../config/card3";
+
+
 function App() {
+
   return (
     <>
       <Navbar />
@@ -69,7 +76,22 @@ function App() {
           className="leaf-icon right" />
 
       </div>
+
+      
       <Link to="/about"><button className="knowmore-button"  > know more</button></Link>
+
+
+  
+     
+      {card3.map((item, index) => (
+  <Card3
+    key={index}
+    image={item.Image}
+  />
+))}
+
+     
+     
       <Footer />
     </>
   )

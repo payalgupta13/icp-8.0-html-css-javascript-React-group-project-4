@@ -1,0 +1,50 @@
+.App-section-3{
+    display: flex;
+    height: 300px;
+    width: 450px;
+    background-color: rgba(151, 244, 213, 0.726);
+  }
+.App-section-3{
+    position: relative;
+}
+.App-section-3 span{
+    position: absolute;
+    top: 25%;
+    left: 1%;
+    z-index: 2;
+font-family:cursive;
+
+}
+.App-section-3 span h2{
+    font-size: 25px;
+color: crimson;
+}
+.App-section-3 span p{
+    font-size:40px;
+}
+.App-section-3 span h3{
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.738);
+}
+
+.App-section-img{
+position: absolute;
+height: 260px;
+bottom: 20px;
+right: 0px;
+}
+
+.App-section-3-shop {
+    position: absolute;
+    bottom: 10px; 
+    left: 30px; 
+    border-radius: 7px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    z-index: 10;
+    font-size: 20px;
+    
+   
+  }
+

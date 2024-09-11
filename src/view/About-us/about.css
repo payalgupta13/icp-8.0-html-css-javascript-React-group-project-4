@@ -2,124 +2,131 @@
 /* AboutUs.css */
 
 .about-container {
-    padding: 40px;
-    background-color: #f2f8e2; /* Light green for an organic feel */
-    color: #333;
+  padding: 40px;
+  background-color: #f2f8e2;
+  /* Light green for an organic feel */
+  color: #333;
+}
+
+.about-hero {
+  text-align: center;
+  background: #8cbf4b;
+  padding: 50px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-title {
+  font-size: 3rem;
+  color: #2e7031;
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  color: #4b8b3d;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  animation: zoomIn 2s ease-in-out;
+
+}
+
+.about-card-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+}
+
+.about-content,
+.about-values {
+  margin: 50px 0;
+  margin: 0 20px;
+  max-width: 400px;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 10px 5px 30px #2e7031;
+  cursor: pointer;
+
+}
+
+.about-content h2,
+.about-values h2 {
+  font-size: 2rem;
+  color: #2e7031;
+  text-align: center;
+}
+
+.about-description {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  animation: slideUp 1s ease-in-out;
+}
+
+.values-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+}
+
+.values-item {
+  font-size: 20px;
+  background-color: #e7f1d7;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+  width: 35%;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.values-item:hover {
+  transform: scale(1.1);
+  background-color: #c6e377;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  .about-hero {
-    text-align: center;
-    background: #8cbf4b;
-    padding: 50px;
-    border-radius: 10px;
-    margin-bottom: 50px;
-    position: relative;
-    overflow: hidden;
-    animation: fadeIn 1.5s ease-in-out;
+
+  to {
+    opacity: 1;
   }
-  
-  .about-title {
-    font-size: 3rem;
-    color: #2e7031;
-  }
-  
-  .about-subtitle {
-    font-size: 1.5rem;
-    color: #4b8b3d;
-    margin-bottom: 20px;
-  }
-  
-  .hero-image {
-    width: 100%;
-    height: auto;
-    max-height: 500px;
-    object-fit: cover;
-    border-radius: 10px;
-    animation: zoomIn 2s ease-in-out;
-   
-  }
-  .about-card-container{
-    display: flex;
-    justify-content: space-around;
-    margin: 15px;
-  }
-  .about-content, .about-values {
-    margin: 50px 0;
-    margin: 0 20px;
-    max-width: 400px;
-    padding: 15px;
-    border-radius: 20px;
-    box-shadow: 10px 5px 30px #2e7031;
-    cursor: pointer;
-    
-  }
-  
-  .about-content h2, .about-values h2 {
-    font-size: 2rem;
-    color: #2e7031;
-    text-align: center;
-  }
-  
-  .about-description {
-    font-size: 18px;
-    color: #333;
-    line-height: 1.2;
-    margin-bottom: 20px;
-    animation: slideUp 1s ease-in-out;
-  }
-  
-  .values-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .values-item {
-    font-size: 20px;
-    background-color: #e7f1d7;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 10px;
-    width: 35%;
-    text-align: center;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .values-item:hover {
+}
+
+@keyframes zoomIn {
+  from {
     transform: scale(1.1);
-    background-color: #c6e377;
   }
-  
-  /* Animations */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+
+  to {
+    transform: scale(1);
   }
-  
-  @keyframes zoomIn {
-    from {
-      transform: scale(1.1);
-    }
-    to {
-      transform: scale(1);
-    }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
   }
-  
-  @keyframes slideUp {
-    from {
-      transform: translateY(50px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
+}
