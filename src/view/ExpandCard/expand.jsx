@@ -22,13 +22,13 @@ function expand() {
                <h2>Cabbage</h2>
                <p onChange={(e)=>setSelectprice(selectprice)}>{selectprice}</p>
                <span> price : ₹30</span>
-            unit
+                Unit
                 <select  value={selectprice} className="expand-select">
                     <option> 500 Gms</option>
                     <option> 1 kg</option>
                     <option> 2 kg</option>
                 </select>
-                quantity
+                Quantity
                 <div className="expand-quantity-counter">
                   <div className="img-icon" onClick={()=>setquality(quality > 1 ?  quality-1 : quality)}>
                         <img src={minus}/>
@@ -38,7 +38,14 @@ function expand() {
                         <img src={plus}/>
                   </div>
                 </div>
+
+                <div>
+                   <button type="button" className="">Add To Cart</button>
+                   <button type="button">Buy It Now</button>
+                </div>
              </div>
+
+          
           </div>
     <Footer/>
   </>
