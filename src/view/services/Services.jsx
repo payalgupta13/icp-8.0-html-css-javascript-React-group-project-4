@@ -2,14 +2,11 @@ import React from 'react'
 import Footer from "../../components/footer/footer"
 import Navbar from "../../components/navbar/nav";
 import './service.css'
-import TopBar from './../../components/topBar/TopBar';
+import TopBar from './../../components/TopBar/TopBar';
 import {ReactDom} from 'react-dom';
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
-const router = createBrowserRouter([
-  path: ""
-])
 
 function Services() {
   return (
