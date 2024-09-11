@@ -63,13 +63,13 @@
 
 .App-section-1-div2 {
 
-    width: 75%;
+    width: 95%;
 }
 
 .App-section-1-div2-box {
-    width: 80%;
+    width: 90%;
     text-align: justify;
-    padding-top: 40px;
+    padding-top: 50px;
     
 }
 
@@ -80,15 +80,15 @@
 
 .App-section-1-div2-box p {
     font-size: 18px;
-    color: rgba(0, 0, 0, 0.596);
-    margin: 20px;
+    color: rgba(0, 0, 0, 0.516);
+    margin: 15px;
 }
 .App-section-1-images-container{
     display: flex;
     gap: 3vw;
     
 }
-.App-section-1-images-container span{
+.App-section-1-images-container span{ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,3 +166,6 @@
     border: none;
     font-size: 16px;
   }
+  .App-section-3-container {
+    display: flex;
+}
