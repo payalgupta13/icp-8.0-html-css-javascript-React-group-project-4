@@ -9,6 +9,7 @@ function expand() {
              <div>
               <img  src={"https://www.freepngimg.com/thumb/categories/2970.png"}/>
              </div>
+             <p>0.5kg</p>
              <div className="expand-details">
                <h2>Cabbage</h2>
                <span> price : ₹30</span>
