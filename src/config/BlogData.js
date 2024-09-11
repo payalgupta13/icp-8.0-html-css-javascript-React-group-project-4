@@ -188,4 +188,4 @@ const Blogs = [
   },
 ];
 
-export { BlogHeading, TagLine, TagLine_2, Blogs};
+export { BlogHeading, TagLine, TagLine_2, Blogs };
