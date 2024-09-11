@@ -9,7 +9,7 @@ import vegetable from '../../images/nav/vegetable.png'
 import wheat from '../../images/nav/wheat.png'
 import farmer from '../../images/nav/farmer.png'
 import { Link } from "react-router-dom"
-
+import FruitsCard from "../../components/card4components/card4"
 
 
 function App() {
@@ -85,6 +85,8 @@ function App() {
       <Link to="/about"><button className="knowmore-button"  > know more</button></Link>
 
 
+      <FruitsCard/>
+      <br/>
     <div className="App-section-3-container">
       {/* card number 3 */}
       {card3card.map((item, index) => (
@@ -98,7 +100,6 @@ function App() {
 
     </div>
 
-     
      
       <Footer />
     </>
