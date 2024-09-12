@@ -40,9 +40,9 @@ function expand() {
                   </div>
                 </div>
 
-                <div>
-                   <button type="button" className="expand-btn">Add To Cart</button>
-                   <button type="button" className="expand-btn">Buy It Now</button>
+                <div className="expand-buttons-container">
+                   <button type="button" className="expand-btn add-to-cart">Add To Cart</button>
+                   <button type="button" className="expand-btn Buy-it-now">Buy It Now</button>
                 </div>
              </div>
 
