@@ -4,6 +4,7 @@ import Navbar from "../../components/navbar/nav"
 import './expand.css'
 import minus  from './../../images/expand/minus-icon.png'
 import plus from './../../images/expand/plus icon.png'
+import { PRODUCTS } from '../../config/carddata'
 function expand() {
 
 
@@ -13,6 +14,12 @@ function expand() {
   return (
     <>
     <Navbar/>
+
+        {
+          
+        }
+
+
           <div className="expand-container">
              <div>
               <img className="expand-main-img" src={"https://www.pngmart.com/files/15/Salad-Bell-Pepper-Red-Transparent-PNG.png"}/>
@@ -20,7 +27,7 @@ function expand() {
              
              <div className="expand-details">
                <h2 className="expand-product-name">Cabbage</h2>
-               {/* <p >0.5 Gms</p> */}
+               
                <p onChange={(e)=>setSelectprice(selectprice)}>{selectprice}</p>
                <span className="expand-product-price-name"> price : ₹30</span>
                 <p className="expand-units">Unit</p>
@@ -44,9 +51,7 @@ function expand() {
                    <button type="button" className="expand-btn add-to-cart">Add To Cart</button>
                    <button type="button" className="expand-btn Buy-it-now">Buy It Now</button>
                 </div>
-             </div>
-
-          
+             </div> 
           </div>
     <Footer/>
   </>

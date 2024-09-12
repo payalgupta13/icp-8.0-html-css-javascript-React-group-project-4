@@ -9,7 +9,7 @@
 }
 .expand-product-name{
     font-size: 50px;
-    margin: 5px;
+    margin-bottom: 5px;
 }
 .expand-product-price-name{
     font-size: 20px;
@@ -57,6 +57,7 @@
     margin: 6px 60px;
     height: 40px;
     width: 190px;
+    cursor: pointer;
 }
 .add-to-cart{
     border: 2px solid #24463c;
