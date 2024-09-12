@@ -7,7 +7,13 @@ import plus from './../../images/expand/plus icon.png'
 import { useParams } from "react-router-dom"
 
 function expandcards (){
-  const {expandcard} = useParams
+  const {expandcard} = useParams();
+  const [carddetails,setCarddetails] =useState({
+    name:"",
+    photo:"",
+    quantity:"",
+    price:""
+  })
 }
 
 function expand() {
