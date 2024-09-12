@@ -3,24 +3,19 @@ import Navbar from "../../components/navbar/nav"
 import Card3 from "../../components/homepageCard3/card3"
 import './App.css'
 import card3card from "./../../config/card3"
-import cow from '../../images/nav/cow.png'
-import earth from '../../images/nav/earth.png'
-import vegetable from '../../images/nav/vegetable.png'
-import wheat from '../../images/nav/wheat.png'
-import farmer from '../../images/nav/farmer.png'
 import { Link } from "react-router-dom"
 import FruitsCard from "../../components/card4components/card4"
-
+import { Appcard1data } from "./../../config/config"
 
 function App() {
 
 
-  
-    
+
+
 
   return (
     <>
-    
+
       <Navbar />
       <div className="App">
       </div>
@@ -36,32 +31,20 @@ function App() {
               and fair pricing..</p>
           </div>
           <div className="App-section-1-images-container">
-            <span>
-              <img className="App-section-1-images" src={earth} />
-              <p>Organic  <br />Farming</p>
-            </span>
-            <span>
-              <img className="App-section-1-images"  src={cow}  />
-              <p>Diffrent<br /> Livestock</p>
-            </span>
-            <span>
-              <img className="App-section-1-images" src={vegetable}  />
-              <p>Fresh <br />Vegetables</p>
-            </span>
-            <span>
-              <img className="App-section-1-images"  src={farmer} />
-              <p>Farm <br />Fresh</p>
-            </span>
-            <span>
-              <img className="App-section-1-images"  src={wheat}  />
-              <p>Agriculture <br />Products</p>
-            </span>
+
+            {Appcard1data.map((item, index) => (
+              <span key={index}>
+                <img className="App-section-1-images" src={item.image} alt={item.altText} />
+                <p>{item.text1} <br /> {item.text2}</p>
+              </span>
+            ))}
+
 
           </div>
 
         </div>
 
-        
+
 
       </div>
 
@@ -81,26 +64,26 @@ function App() {
 
       </div>
 
-      
+
       <Link to="/about"><button className="knowmore-button"  > know more</button></Link>
 
 
-      <FruitsCard/>
-      <br/>
-    <div className="App-section-3-container">
-      {/* card number 3 */}
-      {card3card.map((item, index) => (
-  <Card3
-    key={index}
-    image={item.image}
-    description={item.description}
+      <FruitsCard />
+      <br />
+      <div className="App-section-3-container">
+        {/* card number 3 */}
+        {card3card.map((item, index) => (
+          <Card3
+            key={index}
+            image={item.image}
+            description={item.description}
 
-/>
-))}
+          />
+        ))}
 
-    </div>
+      </div>
 
-     
+
       <Footer />
     </>
 
