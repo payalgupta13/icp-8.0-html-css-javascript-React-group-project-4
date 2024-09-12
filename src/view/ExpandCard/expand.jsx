@@ -4,22 +4,18 @@ import Navbar from "../../components/navbar/nav"
 import './expand.css'
 import minus  from './../../images/expand/minus-icon.png'
 import plus from './../../images/expand/plus icon.png'
-import { PRODUCTS } from '../../config/carddata'
+import { useParams } from "react-router-dom"
+
+function expandcards (){
+  const {expandcard} = useParams
+}
+
 function expand() {
-
-
-  const [selectprice , setSelectprice] =useState()
- 
+   const [selectprice , setSelectprice] =useState()
   const [quality , setquality]=useState(1)
   return (
     <>
     <Navbar/>
-
-        {
-          
-        }
-
-
           <div className="expand-container">
              <div>
               <img className="expand-main-img" src={"https://www.pngmart.com/files/15/Salad-Bell-Pepper-Red-Transparent-PNG.png"}/>
