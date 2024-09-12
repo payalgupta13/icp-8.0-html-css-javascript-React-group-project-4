@@ -48,3 +48,9 @@
     height: 25px;
     margin-bottom: 5px;
 }
+.expand-btn{
+    padding: 0px 28px;
+    margin: 6px 60px;
+    height: 40px;
+    width: 190px;
+}
