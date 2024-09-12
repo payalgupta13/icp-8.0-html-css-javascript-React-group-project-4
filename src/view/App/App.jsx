@@ -5,8 +5,7 @@ import './App.css'
 import card3card from "./../../config/card3"
 import { Link } from "react-router-dom"
 import FruitsCard from "../../components/card4components/card4"
-import { Appcard1data } from "./../../config/config"
-
+import Section1 from "../../components/homepageCard3/card1"
 function App() {
 
 
@@ -18,35 +17,13 @@ function App() {
 
       <Navbar />
       <div className="App">
+<span>Agrimart</span>
+       
       </div>
 
       {/* card number  1 */}
 
-      <div className="App-section-1">
-        <div className="App-section-1-div1"><span className="App-section-1-div1-span" >Agrimart Farm Fresh Products</span></div>
-        <div className="App-section-1-div2">
-          <div className="App-section-1-div2-box"><b >
-            Fresh agri products bring the goodness of nature straight to your table, ensuring quality, nutrition, and flavor in every bite</b><br />
-            <p>Our website connects you directly with local farmers, offering a range of farm-fresh organic products delivered straight to your door. We ensure quality, sustainability,
-              and fair pricing..</p>
-          </div>
-          <div className="App-section-1-images-container">
-
-            {Appcard1data.map((item, index) => (
-              <span key={index}>
-                <img className="App-section-1-images" src={item.image} alt={item.altText} />
-                <p>{item.text1} <br /> {item.text2}</p>
-              </span>
-            ))}
-
-
-          </div>
-
-        </div>
-
-
-
-      </div>
+     <Section1/>
 
       <div className="why-choose-us-content">
         <img src="https://cdn.shopify.com/s/files/1/0646/0568/3879/files/leaf.png?v=1719552788"
