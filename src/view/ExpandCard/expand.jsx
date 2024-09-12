@@ -6,24 +6,25 @@ import minus  from './../../images/expand/minus-icon.png'
 import plus from './../../images/expand/plus icon.png'
 function expand() {
 
-  const [price , setprice]=useState()
+
   const [selectprice , setSelectprice] =useState()
-  const [kgprice , setkgprice] =useState()
+ 
   const [quality , setquality]=useState(1)
   return (
     <>
     <Navbar/>
           <div className="expand-container">
              <div>
-              <img  src={"https://www.freepngimg.com/thumb/categories/2970.png"}/>
+              <img className="expand-main-img" src={"https://www.pngmart.com/files/15/Salad-Bell-Pepper-Red-Transparent-PNG.png"}/>
              </div>
              
              <div className="expand-details">
                <h2>Cabbage</h2>
+               <p >0.5 Gms</p>
                <p onChange={(e)=>setSelectprice(selectprice)}>{selectprice}</p>
                <span> price : ₹30</span>
                 Unit
-                <select  value={selectprice} className="expand-select">
+                <select  value={selectprice} className="expand-select" onChange={(e)=>setSelectprice(selectprice)}>
                     <option> 500 Gms</option>
                     <option> 1 kg</option>
                     <option> 2 kg</option>

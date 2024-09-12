@@ -1,9 +1,16 @@
 .expand-container{
     display: flex;
+    height: 200px;
+    padding: 50px;
 }
 .expand-details{
     display: flex;
     flex-direction: column;
+}
+.expand-main-img{
+    height: 250px;
+    margin-right: 150px;
+    margin: 200p;
 }
 .expand-quantity-counter{
     margin: 5px ;
