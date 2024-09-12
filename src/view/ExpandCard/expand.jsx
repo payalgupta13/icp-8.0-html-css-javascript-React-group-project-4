@@ -19,17 +19,17 @@ function expand() {
              </div>
              
              <div className="expand-details">
-               <h2>Cabbage</h2>
-               <p >0.5 Gms</p>
+               <h2 className="expand-product-name">Cabbage</h2>
+               {/* <p >0.5 Gms</p> */}
                <p onChange={(e)=>setSelectprice(selectprice)}>{selectprice}</p>
-               <span> price : ₹30</span>
-                Unit
+               <span className="expand-product-price-name"> price : ₹30</span>
+                <p className="expand-units">Unit</p>
                 <select  value={selectprice} className="expand-select" onChange={(e)=>setSelectprice(selectprice)}>
                     <option> 500 Gms</option>
                     <option> 1 kg</option>
                     <option> 2 kg</option>
                 </select>
-                Quantity
+                <p className="expand-units">Quantity</p>
                 <div className="expand-quantity-counter">
                   <div className="img-icon" onClick={()=>setquality(quality > 1 ?  quality-1 : quality)}>
                         <img src={minus}/>
