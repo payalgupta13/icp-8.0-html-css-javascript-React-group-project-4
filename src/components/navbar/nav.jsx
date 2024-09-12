@@ -38,15 +38,7 @@ function Header() {
           About
         </NavLink>
 
-        <NavLink
-          to="/contact"
-          style={({ isActive }) =>
-            isActive ? { color: 'white' } : { color: 'grey' }
-          }
-          className="nav"
-        >
-          Contact
-        </NavLink>
+       
 
         <NavLink
           to="/blog"
